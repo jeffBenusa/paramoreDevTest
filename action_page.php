@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $businessState = test_input($_POST["BusinessState"]);
   $businessZIP = test_input($_POST["BusinessZIP"]);
   //$buttonValue = test_input($_POST["ButtonValue"]);
-  echo("<br />" . $businessName . "<br />" . $businessStreet);
+  echo("<br />" . $businessName . "<br />" . $businessType . "<br />" . $userName . "<br />" . $userAddress . "<br />" . $businessStreet . "<br />" . $businessApt . "<br />" . $businessCity . "<br />" . $businessState . "<br />" . $businessZIP);
 }
 
 function test_input($data) {
