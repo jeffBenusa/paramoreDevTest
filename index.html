@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ ind<!DOCTYPE html>
 <html>
   <head>
     <title>Targeted Analysis</title>
@@ -23,7 +23,7 @@
     </nav><!-- End navbar -->
 
     <!--Brand name & Brand motto -->
-    <div class="titleTag">
+    <div class="HeroImage">
       <h1>
         Targeted Analysis
       </h1>
@@ -41,45 +41,45 @@
 
 
   <!-- Input customer informaion PANEL / Input text field -->
-  <div id="textInput" class="panel panel-default container">
+  <div id="textInputPanel" class="panel panel-default container">
     <div class="row">
-      <form action="" class="clearfix" id="text-input-form">
+      <form action="action_page.php" method="post" class="clearfix" id="text-input-form">
         <div class="container-fluid">
           <div class="col-sm-12">
             <div class="clearfix">
               <h1 class="panel-title pull-left">Your Information</h1>
-              <p class="btn-come-back pull-right hidden-xs">come back to this question</p>
+              <p class="first-come-back btn-come-back pull-right hidden-xs">COME BACK TO THIS QUESTION</p>
             </div>
             <p class="panel-subtitle">Information about you and your business.</p>
           </div>
         </div>
         <div id="txt-input-container" class="container-fluid">
-          <div class="col-sm-6">
-                <label class="sr-only">Business Name</label>
-                <input type="text" class="form-control" name="BusinessName" placeholder="Business Name">
-                <label class="sr-only">Business Type</label>
-                <input type="text" class="form-control" placeholder="Business Type">
-                <label class="sr-only">Your Name</label>
-                <input type="text" class="form-control" placeholder="Your Name">
-                <label class="sr-only">Your Address</label>
-                <input type="text" class="form-control" placeholder="Your Address">
-          </div>
-          <div class="col-sm-6">
-              <label class="sr-only">Business Street Address</label>
-              <input type="text" class="form-control" placeholder="Business Street Address">
-              <label class="sr-only">Business Suite Aptartment Number Optional</label>
-              <input type="text" class="form-control" placeholder="Business Suite/Apt Number (Optional)">
-              <label class="sr-only">Business City</label>
-              <input type="text" class="form-control" placeholder="Business City">
-              <div class="form-group">
-                <div class="form-group row">
+          <div class="form-group">
+            <div class="col-sm-6">
+                  <label class="sr-only">Business Name</label>
+                  <input type="text" class="form-control" name="BusinessName" placeholder="Business Name">
+                  <label class="sr-only">Business Type</label>
+                  <input type="text" class="form-control" name="BusinessType" placeholder="Business Type">
+                  <label class="sr-only">Your Name</label>
+                  <input type="text" class="form-control" name="UserName" placeholder="Your Name">
+                  <label class="sr-only">Your Address</label>
+                  <input type="text" class="form-control" name="UserAddress" placeholder="Your Address">
+            </div>
+            <div class="col-sm-6">
+                <label class="sr-only">Business Street Address</label>
+                <input type="text" class="form-control" name="BusinessStreet" placeholder="Business Street Address">
+                <label class="sr-only">Business Suite Aptartment Number Optional</label>
+                <input type="text" class="form-control" name="BusinessApt" placeholder="Business Suite/Apt Number (Optional)">
+                <label class="sr-only">Business City</label>
+                <input type="text" class="form-control" name="BusinessCity" placeholder="Business City">
+                <div class="row">
                   <div class="col-md-6">
                     <label class="sr-only">Business State</label>
-                    <input type="text" class="form-control" placeholder="Business State">
+                    <input type="text" class="form-control" name="BusinessState" placeholder="Business State">
                   </div>
                   <div class="col-md-6">
                     <label class="sr-only">ZIP Code</label>
-                    <input type="text" class="form-control" placeholder="ZIP Code">
+                    <input type="text" class="form-control" name="BusinessZIP" placeholder="ZIP Code">
                   </div>
                 </div>
             </div>
@@ -95,14 +95,14 @@
 
 
   <!--Input customer informaion PANEL / BUTTONs-->
-  <div id="buttonInput" class="panel panel-default container">
+  <div id="buttonInputPanel" class="panel panel-default container">
     <div class="row">
       <form action="" class="clearfix">
         <div class="container-fluid">
           <div class="col-sm-12">
             <div class="clearfix">
               <h1 class="panel-title pull-left">Why You?</h1>
-              <p class="btn-come-back pull-right hidden-xs"></p>
+              <p class="second-come-back btn-come-back pull-right hidden-xs"></p>
             </div>
             <p class="panel-subtitle">Why do customers choose you over the competition?</p>
           </div>
@@ -128,7 +128,6 @@
   <div>
     <button class="btn btn-submit" id="btn-submit" name="button">SUBMIT</button>
   </div>
-
 
   <footer> &copy 2015 Charter Communications  </footer>
 

@@ -55,16 +55,16 @@ nav.navbar.shrink {
 /************
 Section: Brand name & Brand motto
 *************/
-.titleTag{
+.HeroImage{
   margin: 295px auto 160px;
   text-align: center;
   color: white;
 }
 
-.titleTag h1{
+.HeroImage h1{
   font-size: 90px;
 }
-.titleTag h6{
+.HeroImage h6{
   font-size: 14px;
 }
 
@@ -77,6 +77,22 @@ Section: Input customer informaion PANEL / Input text field
 .form-control{
   margin-bottom: 20px;
   border-radius: 0;
+}
+
+/***********
+input icon
+***********/
+
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
 }
 
 .form-control:focus{
