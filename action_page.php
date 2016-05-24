@@ -1,6 +1,8 @@
 <?php
 // define variables and set to empty values
 
+print_r("Connected");
+
 $businessName = $businessType = $userName = $userAddress = $businessStreet = $businessApt = $businessCity = $businessState = $businessZIP = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
