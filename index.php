@@ -1,4 +1,5 @@
- ind<!DOCTYPE html>
+<?php ?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Targeted Analysis</title>
@@ -24,12 +25,8 @@
 
     <!--Brand name & Brand motto -->
     <div class="HeroImage">
-      <h1>
-        Targeted Analysis
-      </h1>
-      <h6>
-        The path to your Targeted Media Plan starts here!
-      </h6>
+      <h1>Targeted Analysis</h1>
+      <h6>The path to your Targeted Media Plan starts here!</h6>
     </div><!-- End Brand name -->
 
     <div>
