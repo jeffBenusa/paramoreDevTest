@@ -4,6 +4,15 @@ $( document ).ready(function() {
   $("#btn-bottom-button").hide();
   $("#btn-input-container").hide();
   $("#buttonInputPanel").addClass("dimmed");
+  $("#buttonValue").hide();
+  
+  var buttonFormValue = "";
+
+
+  submitForms = function(){
+    document.getElementById("FormButtons").submit();
+    document.getElementById("FormText").submit();
+  }
 
   // toggle forms -
   // true will display the text input form and hide the button input form
@@ -25,6 +34,7 @@ $( document ).ready(function() {
   $(".btn-primary").click(function(){
     $("#btn-input-container button").removeClass("active");
     $(this).addClass("active");
+    buttonFormValue = $(this).text();
   })
 
   // Toggles input forms between btn-input-container & txt-input-container

@@ -1,4 +1,3 @@
-<?php ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -40,7 +39,7 @@
   <!-- Input customer informaion PANEL / Input text field -->
   <div id="textInputPanel" class="panel panel-default container">
     <div class="row">
-      <form action="action_page.php" method="post" class="clearfix" id="text-input-form">
+      <form action="action_page.php" method="post" id="FormText" class="clearfix" id="text-input-form">
         <div class="container-fluid">
           <div class="col-sm-12">
             <div class="clearfix">
@@ -94,7 +93,7 @@
   <!--Input customer informaion PANEL / BUTTONs-->
   <div id="buttonInputPanel" class="panel panel-default container">
     <div class="row">
-      <form action="" class="clearfix">
+      <form action="action_page.php" id="FormButtons" method="post" class="clearfix">
         <div class="container-fluid">
           <div class="col-sm-12">
             <div class="clearfix">
@@ -115,6 +114,7 @@
             <button type="button" class="btn btn-primary btn-lg btn-block">OTHER</button>
           </div>
         </div>
+        <input id="buttonValue" type="text" class="form-control" name="ButtonValue" placeholder="">
       </form>
       <a href="#" id="btn-bottom-button"><div  class="container bottom-panel-button">
         <p> NEXT QUESTION &#187</p>
@@ -123,7 +123,8 @@
   </div>
 
   <div>
-    <button class="btn btn-submit" id="btn-submit" name="button">SUBMIT</button>
+    <input type="button" class="btn btn-submit" id="btn-submit" value="SUBMIT" onclick="submitForms()" />
+    <button  name="button"></button>
   </div>
 
   <footer> &copy 2015 Charter Communications  </footer>
