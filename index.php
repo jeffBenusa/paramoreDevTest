@@ -105,13 +105,13 @@
         </div>
         <div id="btn-input-container" class="container-fluid">
           <div class="col-sm-6">
-            <button type="button" class="btn btn-primary btn-lg btn-block">BEST CUSTOMER SERVICE</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">BEST PRICE</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">QUALITY PRODUCT</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" name="customerservice">BEST CUSTOMER SERVICE</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" name="bestPrice">BEST PRICE</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" name="qualityProduct">QUALITY PRODUCT</button>
           </div>
           <div class="col-sm-6">
-            <button type="button" class="btn btn-primary btn-lg btn-block">REPUTATION/TRUST</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">OTHER</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" name="reputationTrust">REPUTATION/TRUST</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" name="other">OTHER</button>
           </div>
         </div>
         <input id="buttonValue" type="text" class="form-control" name="ButtonValue" placeholder="">
