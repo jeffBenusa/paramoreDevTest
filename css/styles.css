@@ -1,6 +1,6 @@
 
 body{
-  background: url("img/background-85.jpg") no-repeat top center, linear-gradient(to right, #042945 0%,#0e445e 50%,#0e445e 51%,#10465a 100%);
+  background: url("../img/background-85.jpg") no-repeat top center, linear-gradient(to right, #042945 0%,#0e445e 50%,#0e445e 51%,#10465a 100%);
 }
 
 .container{
@@ -86,13 +86,13 @@ Section: Input customer informaion PANEL / Input text field
 .validFormEntry{
   border: 2px solid rgb(56,163,140);
   padding-left: 35px;
-  background: url("img/check.png") no-repeat 10px 50%;
+  background: url("../img/check.png") no-repeat 10px 50%;
 }
 
 .validForm{
   transition: all 0.5s ease;
   padding-left: 35px;
-  background: url("img/check.png") no-repeat 10px 10%;
+  background: url("../img/check.png") no-repeat 10px 10%;
 }
 
 /***********
