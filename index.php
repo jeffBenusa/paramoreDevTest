@@ -117,7 +117,7 @@
         <input id="buttonValue" type="text" class="form-control" name="ButtonValue" placeholder="">
       </form>
       <a href="#" id="btn-bottom-button"><div  class="container bottom-panel-button">
-        <p> NEXT QUESTION &#187;</p>
+        <p> PREVIOUS QUESTION &#187;</p>
       </div></a>
     </div>
   </div>
