@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Targeted Analysis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" media="screen">
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div id="txt-input-container" class="container-fluid">
-          <div class="form-group">
+          <div class="form-group ">
             <div class="col-sm-6">
                   <label class="sr-only">Business Name</label>
                   <input type="text" class="form-control" name="BusinessName" placeholder="Business Name">
@@ -117,7 +117,7 @@
         <input id="buttonValue" type="text" class="form-control" name="ButtonValue" placeholder="">
       </form>
       <a href="#" id="btn-bottom-button"><div  class="container bottom-panel-button">
-        <p> NEXT QUESTION &#187</p>
+        <p> NEXT QUESTION &#187;</p>
       </div></a>
     </div>
   </div>
@@ -127,7 +127,7 @@
     <button  name="button"></button>
   </div>
 
-  <footer> &copy 2015 Charter Communications  </footer>
+  <footer> &copy; 2015 Charter Communications  </footer>
 
   <script src="js/jquery-2.2.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

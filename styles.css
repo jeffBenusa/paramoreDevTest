@@ -72,7 +72,11 @@ Section: Brand name & Brand motto
 /************
 Section: Input customer informaion PANEL / Input text field
 *************/
-
+.input-group-addon{
+  background-color: white;
+  border-right: none;
+  margin-bottom: 20px;
+}
 
 .form-control{
   margin-bottom: 20px;
