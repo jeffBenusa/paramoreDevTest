@@ -85,6 +85,16 @@ Section: Input customer informaion PANEL / Input text field
 }
 .validFormEntry{
   border: 2px solid rgb(56,163,140);
+  padding-left: 35px;
+  background: url("img/check.png") no-repeat 10px 50%;
+}
+
+.validFormEntry:before{
+  content: " ";
+  background-color: orange;
+  height: 10px;
+  width: 10px;
+
 }
 .invalidFormEntry{
   border: 2px solid rgb(255,0,0);

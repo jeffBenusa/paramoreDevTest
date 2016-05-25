@@ -16,10 +16,6 @@ $( document ).ready(function() {
   var buttonFormValue = "";
 
 
-
-
-
-
   // ************************
   //  AJAX FUNCTION
   // ************************
@@ -65,7 +61,6 @@ $( document ).ready(function() {
   $(".form-control").keyup(function(e){
     if ($(this).val()!==""){
       $(this).addClass('validFormEntry');
-      showValidatorIcon(e);
     } else {
       $(this).removeClass('validFormEntry');
     }
@@ -116,7 +111,7 @@ $( document ).ready(function() {
       $("#btn-bottom-text").slideUp();
       $("#txt-input-container").slideUp();
       $("#buttonInputPanel").removeClass("dimmed");
-
+      $('.first-come-back').prepend('<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>');
       $('.first-come-back').text("EDIT SECTION");
       $('.second-come-back').text("COME BACK TO THIS QUESTION");
 
