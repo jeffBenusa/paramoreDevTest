@@ -16,41 +16,44 @@ $( document ).ready(function() {
   var buttonFormValue = "";
 
 
-  // collect the current values stored in inputs
-  // sent to process.php [STATUS - echo success"
-  function submitForm(){
-      // Initiate Variables With Form Content
-      var businessName = $("#BusinessName").val();
-      var businessType = $("#BusinessType").val();
-      var userName  = $("#UserName").val();
-      var userAddress = $("#UserAddress").val();
-      var businessStreet = $("#BusinessStreet").val();
-      var businessApt = $("#BusinessApt").val();
-      var businessCity = $("#BusinessCity").val();
-      var businessState = $("#BusinessState").val();
-      var businessZIP = $("#BusinessZIP").val();
+  // ************************
+  //  AJAX FUNCTION
+  // ************************
 
-      $.ajax({
-          type: "POST",
-          url: "process.php",
-          data: "businessName=" + businessName + "&businessType=" + businessType + "&userName=" + userName + "&userName=" + userName + "&userAddress=" + userAddress + "&businessStreet=" + businessStreet + "&businessApt=" + businessApt + "&businessCity=" + businessCity + "&businessState=" + businessState + "&businessZIP=" + businessZIP + "&buttonFormValue" + buttonFormValue,
-          success : function(text){
-              if (text == "success"){
-                  console.log("ajax success");;
+      // collect the current values stored in inputs
+      // sent to process.php [STATUS - echo success"
+      function submitForm(){
+          // Initiate Variables With Form Content
+          var businessName = $("#BusinessName").val();
+          var businessType = $("#BusinessType").val();
+          var userName  = $("#UserName").val();
+          var userAddress = $("#UserAddress").val();
+          var businessStreet = $("#BusinessStreet").val();
+          var businessApt = $("#BusinessApt").val();
+          var businessCity = $("#BusinessCity").val();
+          var businessState = $("#BusinessState").val();
+          var businessZIP = $("#BusinessZIP").val();
+
+          $.ajax({
+              type: "POST",
+              url: "process.php",
+              data: "businessName=" + businessName + "&businessType=" + businessType + "&userName=" + userName + "&userName=" + userName + "&userAddress=" + userAddress + "&businessStreet=" + businessStreet + "&businessApt=" + businessApt + "&businessCity=" + businessCity + "&businessState=" + businessState + "&businessZIP=" + businessZIP + "&buttonFormValue" + buttonFormValue,
+              success : function(text){
+                  if (text == "success"){
+                      console.log("ajax success");;
+                  }
               }
-          }
+          });
+      }
+
+      // Go time!
+      // Cancel the form submision and load submitForm (ajax)
+      $("#btn-submit").click(function(event){
+        event.preventDefault();
+        submitForm();
       });
-  }
 
-
-  // Go time!
-  // Cancel the form submision and load submitForm (ajax)
-  $("#btn-submit").click(function(event){
-    event.preventDefault();
-    submitForm();
-  });
-
-
+  // End AJAX FUNCTION
 
 
 
@@ -60,18 +63,11 @@ $( document ).ready(function() {
     $(this).prepend("<div class='left-inner-addon'><i class='icon-user'></i>").append("</div>");
   })
 
-  // Print function
-  function printValue(value){
-    console.log(value);
-  }
-
   // Select single button for "Why do customers choose you over the competition?"
   $(".btn-primary").click(function(){
     $("#btn-input-container button").removeClass("active");
     $(this).addClass("active");
-    console.log($(this).text());
     buttonFormValue =  $(this).text();
-    console.log(buttonFormValue);
   })
 
   // Toggles input forms between btn-input-container & txt-input-container
@@ -102,20 +98,21 @@ $( document ).ready(function() {
   function toggleInputForms(){
     if (toggleForms){
       toggleForms = false;
-      $("#btn-bottom-button").show();
-      $("#btn-input-container").show();
+      $("#btn-bottom-button").slideDown();
+      $("#btn-input-container").slideDown();
+      $("#btn-bottom-text").slideUp();
+      $("#txt-input-container").slideUp();
       $("#buttonInputPanel").removeClass("dimmed");
-      $("#btn-bottom-text").hide();
-      $("#txt-input-container").hide();
+
       $('.first-come-back').text("EDIT SECTION");
       $('.second-come-back').text("COME BACK TO THIS QUESTION");
 
     } else {
       toggleForms = true;
-      $("#btn-bottom-button").hide();
-      $("#btn-input-container").hide();
-      $("#btn-bottom-text").show();
-      $("#txt-input-container").show();
+      $("#btn-bottom-button").slideUp();
+      $("#btn-input-container").slideUp();
+      $("#btn-bottom-text").slideDown();
+      $("#txt-input-container").slideDown();
       $('.first-come-back').text("COME BACK TO THIS QUESTION");
       $('.second-come-back').text("EDIT SECTION");
     }
