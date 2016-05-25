@@ -63,7 +63,9 @@
             </div>
             <div class="col-sm-6">
                 <label class="sr-only">Business Street Address</label>
-                <input type="text" class="form-control" id="BusinessStreet" placeholder="Business Street Address">
+                <span class="usericon">
+                  <input type="text" class="form-control" id="BusinessStreet" placeholder="Business Street Address">
+                </span>
                 <label class="sr-only">Business Suite Aptartment Number Optional</label>
                 <input type="text" class="form-control" id="BusinessApt" placeholder="Business Suite/Apt Number (Optional)">
                 <label class="sr-only">Business City</label>

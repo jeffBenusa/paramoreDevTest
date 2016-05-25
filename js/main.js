@@ -16,6 +16,10 @@ $( document ).ready(function() {
   var buttonFormValue = "";
 
 
+
+
+
+
   // ************************
   //  AJAX FUNCTION
   // ************************
@@ -56,12 +60,19 @@ $( document ).ready(function() {
   // End AJAX FUNCTION
 
 
-
   // Adding icon to front of input form
   // FIX: DIV is closing itself before wrapping the input field
-  $(".form-control").click(function(){
-    $(this).prepend("<div class='left-inner-addon'><i class='icon-user'></i>").append("</div>");
+  $(".form-control").keyup(function(e){
+    if ($(this).val()!==""){
+      $(this).addClass('validFormEntry');
+      showValidatorIcon(e);
+    } else {
+      $(this).removeClass('validFormEntry');
+    }
   })
+
+
+
 
   // Select single button for "Why do customers choose you over the competition?"
   $(".btn-primary").click(function(){
@@ -69,6 +80,8 @@ $( document ).ready(function() {
     $(this).addClass("active");
     buttonFormValue =  $(this).text();
   })
+
+
 
   // Toggles input forms between btn-input-container & txt-input-container
   $(".bottom-panel-button").click(function(){

@@ -83,10 +83,25 @@ Section: Input customer informaion PANEL / Input text field
   margin-bottom: 20px;
   border-radius: 0;
 }
-
+.validFormEntry{
+  border: 2px solid rgb(56,163,140);
+}
+.invalidFormEntry{
+  border: 2px solid rgb(255,0,0);
+}
 /***********
 input icon
 ***********/
+
+/*
+
+.input {
+    width: 20px;
+    height: 20px;
+    background-image: url('images/microphone.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}*/
 
 .left-inner-addon {
     position: relative;
@@ -101,12 +116,9 @@ input icon
 }
 
 .form-control:focus{
-  border: 2px solid rgb(56,163,140);
-  border-radius: 0;
   webkit-box-shadow:none;
   -moz-box-shadow: none;
   box-shadow: none;
-
 }
 
 
