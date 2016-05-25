@@ -1,6 +1,7 @@
 
 body{
-  background: url("img/background-85.jpg") no-repeat top center;
+  background: url("img/background-85.jpg") no-repeat top center, linear-gradient(to right, #042945 0%,#0e445e 50%,#0e445e 51%,#10465a 100%);
+  background-color:
 }
 
 .container{

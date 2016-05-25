@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+f<!DOCTYPE html>
 <html>
   <head>
     <title>Targeted Analysis</title>
@@ -39,7 +39,7 @@
   <!-- Input customer informaion PANEL / Input text field -->
   <div id="textInputPanel" class="panel panel-default container">
     <div class="row">
-      <form action="action_page.php" method="post" id="FormText" class="clearfix" id="text-input-form">
+      <form action="" method="post" id="FormText" class="clearfix" id="text-input-form">
         <div class="container-fluid">
           <div class="col-sm-12">
             <div class="clearfix">
@@ -53,29 +53,29 @@
           <div class="form-group ">
             <div class="col-sm-6">
                   <label class="sr-only">Business Name</label>
-                  <input type="text" class="form-control" name="BusinessName" placeholder="Business Name">
+                  <input type="text" class="form-control" id="BusinessName" placeholder="Business Name">
                   <label class="sr-only">Business Type</label>
-                  <input type="text" class="form-control" name="BusinessType" placeholder="Business Type">
+                  <input type="text" class="form-control" id="BusinessType" placeholder="Business Type">
                   <label class="sr-only">Your Name</label>
-                  <input type="text" class="form-control" name="UserName" placeholder="Your Name">
+                  <input type="text" class="form-control" id="UserName" placeholder="Your Name">
                   <label class="sr-only">Your Address</label>
-                  <input type="text" class="form-control" name="UserAddress" placeholder="Your Address">
+                  <input type="text" class="form-control" id="UserAddress" placeholder="Your Address">
             </div>
             <div class="col-sm-6">
                 <label class="sr-only">Business Street Address</label>
-                <input type="text" class="form-control" name="BusinessStreet" placeholder="Business Street Address">
+                <input type="text" class="form-control" id="BusinessStreet" placeholder="Business Street Address">
                 <label class="sr-only">Business Suite Aptartment Number Optional</label>
-                <input type="text" class="form-control" name="BusinessApt" placeholder="Business Suite/Apt Number (Optional)">
+                <input type="text" class="form-control" id="BusinessApt" placeholder="Business Suite/Apt Number (Optional)">
                 <label class="sr-only">Business City</label>
-                <input type="text" class="form-control" name="BusinessCity" placeholder="Business City">
+                <input type="text" class="form-control" id="BusinessCity" placeholder="Business City">
                 <div class="row">
                   <div class="col-md-6">
                     <label class="sr-only">Business State</label>
-                    <input type="text" class="form-control" name="BusinessState" placeholder="Business State">
+                    <input type="text" class="form-control" id="BusinessState" placeholder="Business State">
                   </div>
                   <div class="col-md-6">
                     <label class="sr-only">ZIP Code</label>
-                    <input type="text" class="form-control" name="BusinessZIP" placeholder="ZIP Code">
+                    <input type="text" class="form-control" id="BusinessZIP" placeholder="ZIP Code">
                   </div>
                 </div>
             </div>
@@ -123,8 +123,7 @@
   </div>
 
   <div>
-    <input type="button" class="btn btn-submit" id="btn-submit" value="SUBMIT" onclick="submitForms()" />
-    <button  name="button"></button>
+    <input type="button" class="btn btn-submit" id="btn-submit" value="SUBMIT" />
   </div>
 
   <footer> &copy; 2015 Charter Communications  </footer>

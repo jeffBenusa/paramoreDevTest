@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
 
-print_r("Connected");
+
 $businessName = $businessType = $userName = $userAddress = $businessStreet = $businessApt = $businessCity = $businessState = $businessZIP = "";
 
 // $customerService = $bestPrice = $qualityProduct = $reputationTrust = $other = "";

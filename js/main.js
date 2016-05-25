@@ -5,14 +5,75 @@ $( document ).ready(function() {
   $("#btn-input-container").hide();
   $("#buttonInputPanel").addClass("dimmed");
   $("#buttonValue").hide();
-  
+
   var buttonFormValue = "";
 
 
-  submitForms = function(){
-    document.getElementById("FormButtons").submit();
-    document.getElementById("FormText").submit();
+
+
+
+
+
+
+
+  function submitForm(){
+      // Initiate Variables With Form Content
+
+      var businessName = $("#BusinessName").val();
+      var businessType = $("#BusinessType").val();
+      var userName  = $("#UserName").val();
+      var userAddress = $("#UserAddress").val();
+      var businessStreet = $("#BusinessStreet").val();
+      var businessApt = $("#BusinessApt").val();
+      var businessCity = $("#BusinessCity").val();
+      var businessState = $("#BusinessState").val();
+      var businessZIP = $("#BusinessZIP").val();
+
+      // businessName
+      // businessType
+      // userName
+      // userAddress
+      // businessStreet
+      // businessApt
+      // businessCity
+      // businessState
+      // businessZIP
+
+      console.log(businessName);
+
+      $.ajax({
+          type: "POST",
+          url: "process.php",
+          data: "businessName=" + businessName + "&businessType=" + businessType + "&userName=" + userName + "&userName=" + userName + "&userAddress=" + userAddress + "&businessStreet=" + businessStreet + "&businessApt=" + businessApt + "&businessCity=" + businessCity + "&businessState=" + businessState + "&businessZIP=" + businessZIP + "&buttonFormValue" + buttonFormValue,
+          success : function(text){
+              if (text == "success"){
+                  console.log("ajax success");;
+              }
+          }
+      });
   }
+  //
+  // submitForms = function(){
+
+  // }
+
+  $("#btn-submit").click(function(event){
+    // cancels the form submission
+    event.preventDefault();
+
+    // document.getElementById("FormButtons").submit();
+    // document.getElementById("FormText").submit();
+
+
+    console.log("test");
+    submitForm();
+});
+
+
+  //
+  // $('#FormButtons').ajaxForm(function() {
+  //     alert("Thank you for your comment!");
+  // });
 
   // toggle forms -
   // true will display the text input form and hide the button input form
@@ -34,7 +95,9 @@ $( document ).ready(function() {
   $(".btn-primary").click(function(){
     $("#btn-input-container button").removeClass("active");
     $(this).addClass("active");
-    buttonFormValue = $(this).text();
+    console.log($(this).text());
+    buttonFormValue =  $(this).text();
+    console.log(buttonFormValue);
   })
 
   // Toggles input forms between btn-input-container & txt-input-container
