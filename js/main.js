@@ -6,19 +6,20 @@ $( document ).ready(function() {
   $("#buttonInputPanel").addClass("dimmed");
   $("#buttonValue").hide();
 
+
+  // toggle forms -
+  // true will display the text input form and hide the button input form
+  // false will hide the text input form and show the button input form
+  var toggleForms = true;
+
+  // variable used to store the value for which button is clicked
   var buttonFormValue = "";
 
 
-
-
-
-
-
-
-
+  // collect the current values stored in inputs
+  // sent to process.php [STATUS - echo success"
   function submitForm(){
       // Initiate Variables With Form Content
-
       var businessName = $("#BusinessName").val();
       var businessType = $("#BusinessType").val();
       var userName  = $("#UserName").val();
@@ -28,18 +29,6 @@ $( document ).ready(function() {
       var businessCity = $("#BusinessCity").val();
       var businessState = $("#BusinessState").val();
       var businessZIP = $("#BusinessZIP").val();
-
-      // businessName
-      // businessType
-      // userName
-      // userAddress
-      // businessStreet
-      // businessApt
-      // businessCity
-      // businessState
-      // businessZIP
-
-      console.log(businessName);
 
       $.ajax({
           type: "POST",
@@ -52,33 +41,18 @@ $( document ).ready(function() {
           }
       });
   }
-  //
-  // submitForms = function(){
 
-  // }
 
+  // Go time!
+  // Cancel the form submision and load submitForm (ajax)
   $("#btn-submit").click(function(event){
-    // cancels the form submission
     event.preventDefault();
-
-    // document.getElementById("FormButtons").submit();
-    // document.getElementById("FormText").submit();
-
-
-    console.log("test");
     submitForm();
-});
+  });
 
 
-  //
-  // $('#FormButtons').ajaxForm(function() {
-  //     alert("Thank you for your comment!");
-  // });
 
-  // toggle forms -
-  // true will display the text input form and hide the button input form
-  // false will hide the text input form and show the button input form
-  var toggleForms = true;
+
 
   // Adding icon to front of input form
   // FIX: DIV is closing itself before wrapping the input field
