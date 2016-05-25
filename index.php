@@ -53,31 +53,31 @@
           <div class="form-group ">
             <div class="col-sm-6">
                   <label class="sr-only">Business Name</label>
-                  <input type="text" class="form-control" id="BusinessName" placeholder="Business Name">
+                  <input type="text" class="form-control" id="BusinessName" required=true placeholder="Business Name">
                   <label class="sr-only">Business Type</label>
-                  <input type="text" class="form-control" id="BusinessType" placeholder="Business Type">
+                  <input type="text" class="form-control" id="BusinessType" required=true placeholder="Business Type">
                   <label class="sr-only">Your Name</label>
-                  <input type="text" class="form-control" id="UserName" placeholder="Your Name">
+                  <input type="text" class="form-control" id="UserName" required=true placeholder="Your Name">
                   <label class="sr-only">Your Address</label>
-                  <input type="text" class="form-control" id="UserAddress" placeholder="Your Address">
+                  <input type="text" class="form-control" id="UserAddress" required=true placeholder="Your Address">
             </div>
             <div class="col-sm-6">
                 <label class="sr-only">Business Street Address</label>
                 <span class="usericon">
-                  <input type="text" class="form-control" id="BusinessStreet" placeholder="Business Street Address">
+                  <input type="text" class="form-control" id="BusinessStreet" required=true placeholder="Business Street Address">
                 </span>
                 <label class="sr-only">Business Suite Aptartment Number Optional</label>
-                <input type="text" class="form-control" id="BusinessApt" placeholder="Business Suite/Apt Number (Optional)">
+                <input type="text" class="form-control" id="BusinessApt" required=false placeholder="Business Suite/Apt Number (Optional)">
                 <label class="sr-only">Business City</label>
-                <input type="text" class="form-control" id="BusinessCity" placeholder="Business City">
+                <input type="text" class="form-control" id="BusinessCity" required=true  placeholder="Business City">
                 <div class="row">
                   <div class="col-md-6">
                     <label class="sr-only">Business State</label>
-                    <input type="text" class="form-control" id="BusinessState" placeholder="Business State">
+                    <input type="text" class="form-control" id="BusinessState" required=true  placeholder="Business State">
                   </div>
                   <div class="col-md-6">
                     <label class="sr-only">ZIP Code</label>
-                    <input type="text" class="form-control" id="BusinessZIP" placeholder="ZIP Code">
+                    <input type="text" class="form-control" id="BusinessZIP" required=true placeholder="ZIP Code">
                   </div>
                 </div>
             </div>
@@ -113,10 +113,10 @@
           </div>
           <div class="col-sm-6">
             <button type="button" class="btn btn-primary btn-lg btn-block" name="reputationTrust">REPUTATION/TRUST</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" name="other">OTHER</button>
+            <button type="button" id="btn-othr" class="btn btn-primary btn-lg btn-block" name="other">OTHER</button>
           </div>
         </div>
-        <input id="buttonValue" type="text" class="form-control" name="ButtonValue" placeholder="">
+        <input id="buttonValue" type="text" name="ButtonValue" placeholder="">
       </form>
       <a href="#" id="btn-bottom-button"><div  class="container bottom-panel-button">
         <p> PREVIOUS QUESTION &#187;</p>

@@ -5,7 +5,7 @@ $( document ).ready(function() {
   $("#btn-input-container").hide();
   $("#buttonInputPanel").addClass("dimmed");
   $("#buttonValue").hide();
-
+  $("#btn-submit").prop('disabled', true);
 
   // toggle forms -
   // true will display the text input form and hide the button input form
@@ -15,6 +15,16 @@ $( document ).ready(function() {
   // variable used to store the value for which button is clicked
   var buttonFormValue = "";
 
+
+  // function to test if both forms are filled out completely
+  // if both have "validForm" class - submit button will be unlocked\
+  function checkForFinishedForms(){
+    if ($($(".col-sm-12")[0]).hasClass('validForm') && $($(".col-sm-12")[1]).hasClass('validForm')) {
+      $("#btn-submit").prop('disabled', false);
+    } else {
+      $("#btn-submit").prop('disabled', true);
+    }
+  }
 
   // ************************
   //  AJAX FUNCTION
@@ -64,19 +74,31 @@ $( document ).ready(function() {
     } else {
       $(this).removeClass('validFormEntry');
     }
+
+    if ($(".form-control.validFormEntry[required=true]").length == $(".form-control[required=true]").length) {
+      $($(".col-sm-12")[0]).addClass('validForm');
+      checkForFinishedForms();
+    } else {
+      $($(".col-sm-12")[0]).removeClass('validForm');
+      checkForFinishedForms();
+    }
   })
-
-
-
 
   // Select single button for "Why do customers choose you over the competition?"
   $(".btn-primary").click(function(){
     $("#btn-input-container button").removeClass("active");
     $(this).addClass("active");
+    $($(".col-sm-12")[1]).addClass('validForm');
     buttonFormValue =  $(this).text();
+    checkForFinishedForms();
   })
 
-
+  // Selecting "other" button
+  // Opening modal view to have user enter
+  // Returned as "name"
+  $("#btn-othr").click(function(){
+    console.log("other clicked");
+  })
 
   // Toggles input forms between btn-input-container & txt-input-container
   $(".bottom-panel-button").click(function(){
