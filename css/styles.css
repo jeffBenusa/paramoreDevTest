@@ -13,11 +13,6 @@ Fonts
   font-family: 'Montserrat', sans-serif;
 }
 
-a{
-  text-decoration: none;
-}
-
-
 /************
 Section: Navbar
 *************/
@@ -73,12 +68,6 @@ Section: Brand name & Brand motto
 /************
 Section: Input customer informaion PANEL / Input text field
 *************/
-.input-group-addon{
-  background-color: white;
-  border-right: none;
-  margin-bottom: 20px;
-}
-
 .form-control{
   margin-bottom: 20px;
   border-radius: 0;
@@ -98,28 +87,6 @@ Section: Input customer informaion PANEL / Input text field
 /***********
 input icon
 ***********/
-
-/*
-
-.input {
-    width: 20px;
-    height: 20px;
-    background-image: url('images/microphone.png');
-    background-repeat: no-repeat;
-    background-position: right;
-}*/
-
-.left-inner-addon {
-    position: relative;
-}
-.left-inner-addon input {
-    padding-left: 30px;
-}
-.left-inner-addon i {
-    position: absolute;
-    padding: 10px 12px;
-    pointer-events: none;
-}
 
 .form-control:focus{
   webkit-box-shadow:none;
@@ -162,8 +129,6 @@ Section: input customer informaion PANEL / Buttons
   color: #fff;
 }
 
-
-
 /*********************
 Panel Template Rules
 *********************/
@@ -185,7 +150,6 @@ Panel Template Rules
 }
 
 .bottom-panel-button{
-
   background-color: #38a38c;
   text-align: center;
   color: #fff;
@@ -212,11 +176,9 @@ form {
   padding: 40px 40px 0;
 }
 
-
 #text-input-form{
   border: 0px;
 }
-
 
 #btn-submit{
   display: block;
@@ -228,7 +190,6 @@ form {
   font-size: 18px;
   letter-spacing: 2px;
 }
-
 
 footer{
   color: #91a3ac;
